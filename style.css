@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+  background-color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  padding: 70px 150px;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  color: hsl(300, 43%, 22%);
+}
+
+/*HEADER */
+.body-header {
+  flex: 1;
+  margin-bottom: 20px;
+}
+.body-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.body-description {
+  color: hsl(303, 10%, 53%);
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* RATINGS */
+.ratings {
+  flex: 1;
+  font-weight: 700;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.ratings img {
+  margin-right: 7px;
+  width: 13px;
+  height: 13px;
+}
+.rating-one,
+.rating-two,
+.rating-three {
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 15px;
+  display: flex;
+  padding: 15px 30px;
+  border-radius: 6px;
+}
+.rating-one {
+  align-self: flex-start;
+}
+.rating-two {
+  align-self: center;
+}
+.rating-three {
+  align-self: flex-end;
+}
+/* COMMENTS SECTION */
+.comment-section {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-section img {
+  border-radius: 50%;
+  width: 35px;
+}
+.box {
+  background-color: hsl(300, 43%, 22%);
+  padding: 25px;
+  width: 30%;
+  border-radius: 6px;
+}
+.box-1 {
+  transform: translateY(-20px);
+}
+.box-3 {
+  transform: translateY(20px);
+}
+.box-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.box-title {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 9px;
+}
+.comment {
+  color: hsl(303, 12%, 70%);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.custumer {
+  color: hsl(303, 12%, 70%);
+  font-size: 10px;
+  padding-bottom: 4px;
+}
+/* RESPONSIVE DESIGN FOR SMALL SCREENS */
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("images/bg-pattern-top-mobile.svg"),
+      url("images/bg-pattern-bottom-mobile.svg");
+    padding: 60px 35px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .body-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .body-description {
+    text-align: center;
+  }
+  .ratings {
+    margin-bottom: 50px;
+  }
+  .ratings img {
+    margin-bottom: 10px;
+  }
+  .rating-one,
+  .rating-two,
+  .rating-three {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .comment-section {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+}
