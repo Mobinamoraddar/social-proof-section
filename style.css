@@ -9,14 +9,24 @@ body {
   background-image: url("images/bg-pattern-top-desktop.svg"),
     url("images/bg-pattern-bottom-desktop.svg");
   background-color: hsl(0, 0%, 100%);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
   font-size: 15px;
   font-family: "Spartan", sans-serif;
   font-weight: 500;
-  padding: 70px 150px;
-  height: 100vh;
+  /* margin: 0 auto; */
+  max-height: 100vh;
 }
 .container {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translateY(-50%);
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1020px;
   color: hsl(300, 43%, 22%);
 }
 
@@ -72,6 +82,12 @@ body {
 }
 /* COMMENTS SECTION */
 .comment-section {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  /* transform: translateY(-15%); */
+  margin: 0 auto;
+  max-width: 1020px;
   display: flex;
   justify-content: space-between;
 }
